@@ -19,7 +19,7 @@ const Hero = () => (
     </p>
     <p>
       I previously created <a href="https://momomarket.africa/" target={"_blank"}>Momo Marketplace</a>, a platform
-      which is used for selling various products in Africa's market. I was also created a payment method plugin for Paysky. I graduated from International Islamic University,Islamabad with
+      which is used for selling various products in Africa&apos;s market. I was also created a payment method plugin for Paysky. I graduated from International Islamic University,Islamabad with
       degree in Computer Science. I&#x27;m currently based in
       Islamabad,Pakistan.
     </p>
