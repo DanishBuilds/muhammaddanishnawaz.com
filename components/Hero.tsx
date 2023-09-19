@@ -8,8 +8,8 @@ const Hero = () => (
       <Image
         src={mypic}
         alt="Picture of the author"
-        width="45"
-        height="45"
+        width="20"
+        height="20"
       />{" "}
         &nbsp;Muhammad Danish Nawaz
     </h1>
