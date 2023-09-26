@@ -23,7 +23,7 @@ const Hero = () => (
     <p>
         My educational background is anchored in Computer Science, with a degree from the esteemed International Islamic University, Islamabad.
     </p>
-      <p>I am currently situated in Islamabad, Pakistan, and my professional interests revolve around cutting-edge technologies such as Angular, Node.js, React, Kubernetes, Docker, and various CI/CD tools, as I continually seek to enhance my skills and drive innovation in the field."</p>
+      <p>I am currently situated in Islamabad, Pakistan, and my professional interests revolve around cutting-edge technologies such as Angular, Node.js, React, Kubernetes, Docker, and various CI/CD tools, as I continually seek to enhance my skills and drive innovation in the field.</p>
 
   </>
 );
