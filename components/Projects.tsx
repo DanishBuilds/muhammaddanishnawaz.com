@@ -31,9 +31,7 @@ const Projects = () => {
     return (<>
         <h2 data-content="Projects">Projects</h2>
         <p>
-            I&apos;ve worked on a variety of projects: some technical, some
-            community-focused, and some just for fun. Here are a few of my
-            favorites.
+            I&apos;ve had the pleasure of diving into a diverse pool of projects: from technical challenges to community-driven initiatives, and even some just for the sheer joy of it. Allow me to share a glimpse of my standout favorites.
         </p>
         <div className="grid grid-cols-1 grid-rows-2 gap-5 sm:grid-cols-2">
             {projects.map((project) => (<a

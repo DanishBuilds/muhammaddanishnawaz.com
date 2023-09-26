@@ -29,10 +29,9 @@ const Work = () => {
     return (<>
             <h2 data-content="Work">Work</h2>
             <p>
-                If you&#x27;d like to learn more, please
-                take a look at my{' '}
+                If you&#x27;re eager to discover more, I invite you to explore my LinkedIn profile {' '}
                 <a href="https://www.linkedin.com/in/muhammad-danish-nawaz/" target="blank" rel="_noreferrer">
-                    LinkedIn
+                    Muhammad Danish Nawaz
                 </a>
                 .
             </p>
