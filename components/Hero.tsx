@@ -14,19 +14,17 @@ const Hero = () => (
         &nbsp;Muhammad Danish Nawaz
     </h1>
     <p>
-      I Work as Team Lead at{" "}
-      <a href="//www.paysky.io/" target={"_blank"}>Paysky.io</a>.
+        I currently hold the position of Team Lead at {" "}
+      <a href="//www.paysky.io/" target={"_blank"}>Paysky.io</a>, where I lead and coordinate teams for project success.
     </p>
     <p>
-      I previously created <a href="https://momomarket.africa/" target={"_blank"}>Momo Marketplace</a>, a platform
-      which is used for selling various products in Africa&apos;s market. I was also created a payment method plugin for Paysky. I graduated from International Islamic University,Islamabad with
-      degree in Computer Science. I&#x27;m currently based in
-      Islamabad,Pakistan.
+        Previously, I had the privilege of spearheading the development of <a href="https://momomarket.africa/" target={"_blank"}>Momo Marketplace</a>, a dynamic platform catering to diverse product offerings within the African market. My accomplishments include the creation of a custom payment method plugin for Paysky.io.
     </p>
     <p>
-      I&#x27;m interested in Angular, Nodejs, React, Kubernetes, Dockers more CI/CD
-      technologies as well.
+        My educational background is anchored in Computer Science, with a degree from the esteemed International Islamic University, Islamabad.
     </p>
+      <p>I am currently situated in Islamabad, Pakistan, and my professional interests revolve around cutting-edge technologies such as Angular, Node.js, React, Kubernetes, Docker, and various CI/CD tools, as I continually seek to enhance my skills and drive innovation in the field."</p>
+
   </>
 );
 
