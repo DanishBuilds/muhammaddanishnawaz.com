@@ -22,53 +22,61 @@ const Skills = () => {
     return (<>
         <h2 data-content="Skills">Skills</h2>
         <div className="grid grid-cols-1 grid-rows-2 gap-5 sm:grid-cols-2">
-            {Skills.map((project) => (<a
-                className="bg-gray-100 p-4 no-underline transition hover:scale-105 dark:bg-gray-900"
-                target="blank"
-            >
-                <h3 className="mb-1 font-bold">{project.name}</h3>
-                <p className="text-sm dark:text-gray-400">
-                    {project.description.split('\n').map((line, index) => {
-                        // Define the categories and their keywords
-                        const categories = {
-                            'Languages:': 'Languages:',
-                            'Frameworks & Libraries:': 'Frameworks & Libraries:',
-                            'Frontend Architecture:': 'Frontend Architecture:',
-                            'State Management:': 'State Management:',
-                            'UI/UX Design:': 'UI/UX Design:',
-                            'Version Control:': 'Version Control:',
-                            'RESTful APIs:': 'RESTful APIs:',
-                            'Authentication and Authorization:': 'Authentication and Authorization:',
-                            'Backend Collaboration:': 'Backend Collaboration:',
-                            'Data Management:': 'Data Management:',
-                            'DevOps & Deployment:': 'DevOps & Deployment:',
-                            'Build Tools:': 'Build Tools:',
-                            'Testing:': 'Testing:',
-                            'CI/CD:': 'CI/CD:',
-                            'Project Management:': 'Project Management:',
-                            'Design & Prototyping:': 'Design & Prototyping:',
-                            'Code Quality & Security:': 'Code Quality & Security:',
-                        };
+            {Skills.map((project, projectIndex) => (
+                <a
+                    key={projectIndex} // Add key to the a tag
+                    className="bg-gray-100 p-4 no-underline transition hover:scale-105 dark:bg-gray-900"
+                    target="_blank"
+                >
+                    <h3 className="mb-1 font-bold">{project.name}</h3>
+                    <p className="text-sm dark:text-gray-400">
+                        {project.description.split('\n').map((line, lineIndex) => {
+                            // Define the categories and their keywords
+                            const categories = {
+                                'Languages:': 'Languages:',
+                                'Frameworks & Libraries:': 'Frameworks & Libraries:',
+                                'Frontend Architecture:': 'Frontend Architecture:',
+                                'State Management:': 'State Management:',
+                                'UI/UX Design:': 'UI/UX Design:',
+                                'Version Control:': 'Version Control:',
+                                'RESTful APIs:': 'RESTful APIs:',
+                                'Authentication and Authorization:': 'Authentication and Authorization:',
+                                'Backend Collaboration:': 'Backend Collaboration:',
+                                'Data Management:': 'Data Management:',
+                                'DevOps & Deployment:': 'DevOps & Deployment:',
+                                'Build Tools:': 'Build Tools:',
+                                'Testing:': 'Testing:',
+                                'CI/CD:': 'CI/CD:',
+                                'Project Management:': 'Project Management:',
+                                'Design & Prototyping:': 'Design & Prototyping:',
+                                'Code Quality & Security:': 'Code Quality & Security:',
+                            };
 
-                        // Check if the line starts with one of the keywords you want to bold
-                        for (const [key, value] of Object.entries(categories)) {
-                            if (line.startsWith(value)) {
-                                return (<React.Fragment key={index}>
-                                    <strong>{value}</strong> {line.split(':')[1]}
-                                    <br/>
-                                </React.Fragment>);
+                            // Check if the line starts with one of the keywords you want to bold
+                            for (const [key, value] of Object.entries(categories)) {
+                                if (line.startsWith(value)) {
+                                    return (
+                                        <React.Fragment key={lineIndex}>
+                                            <strong>{value}</strong> {line.split(':')[1]}
+                                            <br/>
+                                        </React.Fragment>
+                                    );
+                                }
                             }
-                        }
 
-                        // Return normal lines
-                        return (<React.Fragment key={index}>
-                            {line}
-                            <br/>
-                        </React.Fragment>);
-                    })}
-                </p>
-            </a>))}
+                            // Return normal lines
+                            return (
+                                <React.Fragment key={lineIndex}>
+                                    {line}
+                                    <br/>
+                                </React.Fragment>
+                            );
+                        })}
+                    </p>
+                </a>
+            ))}
         </div>
+
         {/*
         <Link 
           href={'/'}
