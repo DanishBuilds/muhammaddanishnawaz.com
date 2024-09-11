@@ -6,7 +6,7 @@ const Projects = () => {
     }, {
         name: 'Yalla Super Mall',
         href: 'https://yallasupermall.com/',
-        description: 'Yalla Super Mall is an online shop that allows consumers to browse and select goods for purchase to be delivered at a location of their choice. Customers can choose to pay either with  their bank issued credit or debit cards. We will continue to add more products to Yalla Super Mall for your selection on a daily basis.',
+        description: 'Store cutomized to your brand name & logo and linked to your own domain.\n' + 'Very easy web dashboard & mobile application to manage products and orders\n' + 'Ability to generate payment links (e-Invoices) or product links to collect payments from social media in one click.\n' + 'Optimized for digital marketing and Search engines (SEO).\n' + 'Multi-language support (English &. Arabic)\n' + 'Manage multiple warehouses & fulfillment centers.\n' + 'Supports multiple payment options (Cards, Wallets, Cash on Delivery, Cash at Yalla merchants network & Yalla partners)\n' + 'Supports multiple local and international shipping providers.\n' + 'Comes bundled with “Yalla Virtual POS to help you accept payments face-to-face at your store or on delivery.',
     }, {
         name: 'reactjs-moamalat',
         href: 'https://www.npmjs.com/package/reactjs-moamalat',
@@ -31,7 +31,9 @@ const Projects = () => {
     return (<>
         <h2 data-content="Projects">Projects</h2>
         <p>
-            I&apos;ve had the pleasure of diving into a diverse pool of projects: from technical challenges to community-driven initiatives, and even some just for the sheer joy of it. Allow me to share a glimpse of my standout favorites.
+            I&apos;ve had the pleasure of diving into a diverse pool of projects: from technical challenges to
+            community-driven initiatives, and even some just for the sheer joy of it. Allow me to share a glimpse of my
+            standout favorites.
         </p>
         <div className="grid grid-cols-1 grid-rows-2 gap-5 sm:grid-cols-2">
             {projects.map((project) => (<a

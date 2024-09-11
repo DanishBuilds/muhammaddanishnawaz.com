@@ -1,31 +1,30 @@
-import Image from "next/image";
-import mypic from "../public/gokurun.gif";
-
-const Hero = () => (
-  <>
+const Hero = () => (<>
     <h1 className="text-4xl font-bold flex">
-      {" "}
-      <Image
-        src={mypic}
-        alt="Picture of the author"
-        width="20"
-        height="20"
-      />{" "}
-        &nbsp;Muhammad Danish Nawaz
+        Muhammad Danish Nawaz
     </h1>
     <p>
-        I currently hold the position of Team Lead at {" "}
-      <a href="//www.paysky.io/" target={"_blank"}>Paysky.io</a>, where I lead and coordinate teams for project success.
+        I am a dedicated and passionate Front-End Developer with over 5 years of experience in designing and
+        implementing dynamic, responsive, and user-friendly web applications. I specialize in <strong>Angular
+        2+</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Angular
+        Material</strong>, <strong>Tailwind</strong>, <strong>Prime NG</strong>, <strong>Nginx</strong>, <strong>Sonar Qube</strong> and <strong>Google maps & analytics</strong> with
+        a proven
+        track record of delivering complex, high-performance applications across various industries
+        including <strong>fintech</strong>, <strong>marketplace</strong>, <strong>trucking</strong>, <strong>real estate</strong>, and <strong>healthcare</strong>.
+        <br/>
+        <br/>
+        With a strong foundation in <strong>Web development technologies</strong>, I am proficient in front-end
+        frameworks such as <strong>Angular</strong> and <strong>React.js</strong> with
+        extensive experience in building applications that seamlessly integrate with backend services through <strong>REST
+        APIs</strong>. My keen eye for design and focus on <strong>user experience</strong> have consistently resulted
+        in applications that not only meet but exceed client and end-user expectations.
+        <br/>
+        <br/>
+        My collaborative and communicative nature allows me to work effectively with cross-functional
+        teams, including designers, backend developers, and stakeholders. I thrive in both <strong>agile</strong> and
+        traditional development environments and am always looking for new ways to improve my craft, staying up-to-date
+        with the latest trends and advancements in the field of <strong>web development</strong>.
     </p>
-    <p>
-        Previously, I had the privilege of spearheading the development of <a href="https://momomarket.africa/" target={"_blank"}>Momo Marketplace</a>, a dynamic platform catering to diverse product offerings within the African market. My accomplishments include the creation of a custom payment method plugin for Paysky.io.
-    </p>
-    <p>
-        My educational background is anchored in Computer Science, with a degree from the esteemed International Islamic University, Islamabad.
-    </p>
-      <p>I am currently situated in Islamabad, Pakistan, and my professional interests revolve around cutting-edge technologies such as Angular, Node.js, React, Kubernetes, Docker, and various CI/CD tools, as I continually seek to enhance my skills and drive innovation in the field.</p>
 
-  </>
-);
+</>);
 
 export default Hero;

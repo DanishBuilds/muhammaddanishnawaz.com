@@ -13,6 +13,12 @@ const Contact = () => (
         <span className="bg-gray-100 p-1 dark:bg-gray-900">Muhammad Danish Nawaz</span>.
       </p>
       <p>
+        You can contact me at{' '}
+        <span className="bg-gray-100 p-1 dark:bg-gray-900">
+          +92-302-7527777
+        </span>
+        .
+      </p><p>
         You can also email me at{' '}
         <span className="bg-gray-100 p-1 dark:bg-gray-900">
           danishlashari3@gmail.com
