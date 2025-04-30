@@ -5,9 +5,9 @@ import {
   mobile,
   web,
   css,
-  gearXpert,
-  project2,
-  project3,
+  momo,
+  falaya,
+  moamalat,
   mysql,
   express,
   aws,
@@ -183,16 +183,21 @@ const testimonials = [
 ];
 const projects = [
   {
-    name: "Tekisky Mart",
+    name: "Falaya",
     description:
-      "Tekisky Mart is a web-based platform that allows users to search, explore, and purchase a wide range of products from various providers, offering a seamless and efficient shopping experience.",
+      "I worked on Falaya, a modern real estate platform, where I developed and optimized the front end using Angular and\n" +
+        "TypeScript to enhance user experience and performance. I implemented interactive property search and listing features,\n" +
+        "ensuring a seamless browsing experience for buyers, sellers, and agents. Additionally, I integrated RESTful APIs to\n" +
+        "enable real-time data synchronization, improving property updates and search functionality. To enhance UI/UX, I\n" +
+        "designed responsive layouts and mobile-friendly components, ensuring cross-device compatibility. I also collaborated\n" +
+        "closely with backend developers to streamline data ow, optimize performance, and maintain application scalability.\n",
     tags: [
       {
-        name: "react",
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "material-ui",
         color: "white-text-gradient",
       },
       {
@@ -205,53 +210,57 @@ const projects = [
       },
  
     ],
-    image: project2,
+    image: falaya,
     source_code_link: "https://github.com/",
   },
   {
-    name: "GearXpert",
+    name: "MOMO Marketplace",
     description:
-      "GearXpert is your ultimate destination for premium auto parts and accessories, Whether you're an automobile enthusiast or a professional, find everything you need to upgrade, repair.",
+      "MOMO Marketplace is a digital marketplace platform operated by MTN Group, a leading telecommunications company\n" +
+        "serving multiple African and Middle Eastern countries. The platform provides a comprehensive ecosystem for app\n" +
+        "distribution, content delivery, mobile payments, and digital commerce, catering to both consumers and businesses.\n" +
+        "MOMO Marketplace ofers a diverse range of digital products and services, including mobile applications, games,\n" +
+        "music, videos, and other digital content. Additionally, it serves as a central hub for mobile payments and nancial\n" +
+        "services, enabling secure transactions, digital wallet integrations, and seamless e-commerce experiences.\n",
     tags: [
       {
-        name: "react",
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
-        name: "emailJs",
+        name: "material-ui",
         color: "green-text-gradient",
       },
       {
-        name: "Gsap",
+        name: ".net",
         color: "pink-text-gradient",
       },
     ],
-    image: gearXpert,
+    image: momo,
     source_code_link: "https://github.com/",
   },
   {
-    name: "GoGroove-Ecommerce",
+    name: "Moamalat",
     description:
-      "Go-Groove is your ultimate destination for premium products across various categories. Whether you're a savvy shopper or a professional, enhance, and simplify your lifestyle—all in one place!",
+      "I developed a custom payment method plugin using React.js for Moamalat, a leading nancial services provider. The\n" +
+        "plugin was designed to enhance the user experience by providing a seamless, intuitive, and ecient payment processing\n" +
+        "system. It streamlined transactions by integrating secure payment gateways, optimizing performance, and ensuring\n" +
+        "compatibility with various nancial systems. Additionally, I focused on UI/UX enhancements, ensuring a smooth and\n" +
+        "responsive interface for end users.\n",
     tags: [
       {
-        name: "react",
+        name: "react-js",
         color: "blue-text-gradient",
       },
       {
-        name: "express",
+        name: "bootstrap",
+        color: "pink-text-gradient",
+      }, {
+        name: "npm",
         color: "white-text-gradient",
-      },
-      {
-        name: "node",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
+      }
     ],
-    image: project3,
+    image: moamalat,
     source_code_link: "https://github.com/",
   },
 ];
