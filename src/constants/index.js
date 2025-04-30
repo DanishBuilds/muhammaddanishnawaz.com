@@ -1,13 +1,9 @@
 
 import {
-  logo,
   backend,
   creator,
   mobile,
   web,
-  github,
-  menu,
-  close,
   css,
   gearXpert,
   project2,
@@ -16,7 +12,6 @@ import {
   express,
   aws,
   mui,
-
   gsap,
   framer,
   figma,
@@ -26,19 +21,10 @@ import {
   mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
   threejs,
-  firstTestimonial,
-  secondTestimonial,
-  thirdTestimonial,
-  usmanImage, usamaImage, shujatImage, haseebImage, shaheerImage
+  usmanImage, usamaImage, shujatImage, haseebImage, shaheerImage,angular,vuejs
 } from '../assets'
-
-
-// Import Tekisky separately
-import tekisky from "../assets/company/tekisky.png";
-
 
 export const navLinks = [
 
@@ -79,6 +65,18 @@ const services = [
 
 const technologies = [
   {
+    name: "Angular",
+    icon: angular,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Vue JS",
+    icon: vuejs,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -91,10 +89,6 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
     name: "gsap",
     icon: gsap,
   },
@@ -102,8 +96,6 @@ const technologies = [
     name: "framer",
     icon: framer,
   },
-
- 
   {
     name: "Three JS",
     icon: threejs,
@@ -111,10 +103,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -144,28 +132,9 @@ const technologies = [
     name: "MySql",
     icon: mysql,
   },
-
   {
     name: "git",
     icon: git,
-  },
- 
-
-];
-
-const experiences = [
-  {
-    title: "Full-Stack Developer",
-    company_name: "Tekisky",
-    icon: tekisky,
-    iconBg: "#383E56",
-    date: "Jan 2023 - present",
-    points: [
-      "Developing and maintaining web applications using MERN technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
   },
 ];
 
@@ -287,4 +256,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, testimonials, projects };

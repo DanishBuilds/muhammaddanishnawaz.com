@@ -34,7 +34,8 @@ import usamaImage from './usamaImage.jpg';
 import shujatImage from './shujatImage.jpg';
 import haseebImage from './haseebImage.jpg';
 import shaheerImage from './shaheerImage.jpg';
-
+import angular from './tech/angular.svg'
+import vuejs from './tech/Vue.js.svg'
 export {
   logo,
   backend,
@@ -68,8 +69,10 @@ export {
   tailwind,
   threejs,
   usmanImage,
-    usamaImage,
-    shujatImage,
-    haseebImage,
-    shaheerImage
+  usamaImage,
+  shujatImage,
+  haseebImage,
+  shaheerImage,
+  angular,
+  vuejs
 };
