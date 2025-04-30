@@ -16,7 +16,7 @@ import {
   express,
   aws,
   mui,
-  
+
   gsap,
   framer,
   figma,
@@ -32,6 +32,7 @@ import {
   firstTestimonial,
   secondTestimonial,
   thirdTestimonial,
+  usmanImage, usamaImage, shujatImage, haseebImage, shaheerImage
 } from '../assets'
 
 
@@ -175,6 +176,7 @@ const testimonials = [
     name: "Muhammad Usman",
     designation: "Software Engineer",
     company: "Micro Merger",
+    image: usmanImage
 
   },
   {
@@ -183,7 +185,7 @@ const testimonials = [
     name: "Usama Javaid",
     designation: "Software Engineer",
     company: "SNSKIES",
-
+    image: usamaImage
   },
   {
     testimonial:
@@ -191,7 +193,7 @@ const testimonials = [
     name: "Shujaat Ali Malik",
     designation: "Technical Project Manager",
     company: "Funavry Technologies",
-
+    image: shujatImage
   },
   {
     testimonial:
@@ -199,7 +201,7 @@ const testimonials = [
     name: "Haseeb Ahmad",
     designation: "Technical Lead",
     company: "Funavry Technologies",
-
+    image: haseebImage
   },
   {
     testimonial:
@@ -207,7 +209,7 @@ const testimonials = [
     name: "Muhammad Shaheer Khan",
     designation: "Software Engineer",
     company: "Asasa Tech",
-
+    image: shaheerImage
   },
 ];
 const projects = [

@@ -28,7 +28,12 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import firstTestimonial from './Tars Ken.webp';
 import secondTestimonial from './image.webp';
-import thirdTestimonial from './third testimonial.webp'
+import thirdTestimonial from './third testimonial.webp';
+import usmanImage from './usmanImage.jpg';
+import usamaImage from './usamaImage.jpg';
+import shujatImage from './shujatImage.jpg';
+import haseebImage from './haseebImage.jpg';
+import shaheerImage from './shaheerImage.jpg';
 
 export {
   logo,
@@ -62,5 +67,9 @@ export {
   redux,
   tailwind,
   threejs,
-
+  usmanImage,
+    usamaImage,
+    shujatImage,
+    haseebImage,
+    shaheerImage
 };
