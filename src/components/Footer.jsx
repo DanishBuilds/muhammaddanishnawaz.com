@@ -1,28 +1,56 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FaInstagram, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
+    const [countError, setCountError] = useState(null);
+
     useEffect(() => {
-        // Load GoatCounter script for tracking and visitor count
+        // Load GoatCounter script
         const script = document.createElement("script");
         script.src = "//gc.zgo.at/count.js";
         script.async = true;
         script.setAttribute("data-goatcounter", "https://danishlashari.goatcounter.com/count");
         document.body.appendChild(script);
 
-        // Initialize visitor count after script loads
-        script.addEventListener("load", () => {
+        // Initialize visitor count
+        const initVisitCount = () => {
             if (window.goatcounter && window.goatcounter.visit_count) {
+                console.log("GoatCounter loaded, initializing visit_count");
                 window.goatcounter.visit_count({
-                    append: "#visitor-count", // ID of the span to display count
-                    type: "json", // Use JSON to extract raw count
-                    no_branding: true, // Remove GoatCounter branding (if allowed)
+                    append: "#visitor-count",
+                    type: "json",
+                    no_branding: true,
+                    path: "//", // Total site visits
                 });
+            } else {
+                console.warn("GoatCounter or visit_count not available");
+                setCountError("Visitor count unavailable");
             }
+        };
+
+        // Handle script load
+        script.addEventListener("load", () => {
+            console.log("GoatCounter script loaded");
+            initVisitCount();
         });
+
+        // Handle script error
+        script.addEventListener("error", () => {
+            console.error("Failed to load GoatCounter script");
+            setCountError("Visitor count unavailable");
+        });
+
+        // Retry if script is slow
+        const timeout = setTimeout(() => {
+            if (!window.goatcounter) {
+                console.warn("GoatCounter script timeout");
+                setCountError("Visitor count unavailable");
+            }
+        }, 5000);
 
         return () => {
             document.body.removeChild(script);
+            clearTimeout(timeout);
         };
     }, []);
 
@@ -39,7 +67,7 @@ const Footer = () => {
             </a>
             <span>0092 302 752 7777</span>
             <span>
-                Total visits: <span id="visitor-count">Loading...</span>
+                Total visits: {countError ? countError : <span id="visitor-count">Loading...</span>}
             </span>
         </footer>
     );
