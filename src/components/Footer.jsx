@@ -5,7 +5,7 @@ const Footer = () => {
     const [visits, setVisits] = useState(null);
 
     useEffect(() => {
-        fetch("https://danishlashari.goatcounter.com/api/v0/stats/totals")
+        fetch("https://danishlashari.goatcounter.com/api/v0/stats/total")
             .then((res) => res.json())
             .then((data) => setVisits(data.views))
             .catch((err) => console.error("Failed to fetch visit count:", err));
