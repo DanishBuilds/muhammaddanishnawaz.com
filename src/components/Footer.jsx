@@ -1,14 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { FaInstagram, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
-    const [visits, setVisits] = useState(null);
-
     useEffect(() => {
-        fetch("https://danishlashari.goatcounter.com/api/v0/stats/total")
-            .then((res) => res.json())
-            .then((data) => setVisits(data.views))
-            .catch((err) => console.error("Failed to fetch visit count:", err));
+        // Load GoatCounter script for tracking and visitor count
+        const script = document.createElement("script");
+        script.src = "//gc.zgo.at/count.js";
+        script.async = true;
+        script.setAttribute("data-goatcounter", "https://danishlashari.goatcounter.com/count");
+        document.body.appendChild(script);
+
+        // Initialize visitor count after script loads
+        script.addEventListener("load", () => {
+            if (window.goatcounter && window.goatcounter.visit_count) {
+                window.goatcounter.visit_count({
+                    append: "#visitor-count", // ID of the span to display count
+                    type: "json", // Use JSON to extract raw count
+                    no_branding: true, // Remove GoatCounter branding (if allowed)
+                });
+            }
+        });
+
+        return () => {
+            document.body.removeChild(script);
+        };
     }, []);
 
     return (
@@ -23,7 +38,9 @@ const Footer = () => {
                 <FaLinkedin size={24} />
             </a>
             <span>0092 302 752 7777</span>
-            {visits !== null && <span>Total visits: {visits}</span>}
+            <span>
+                Total visits: <span id="visitor-count">Loading...</span>
+            </span>
         </footer>
     );
 };
