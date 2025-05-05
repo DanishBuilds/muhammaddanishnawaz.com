@@ -28,9 +28,6 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
-import firstTestimonial from './Tars Ken.webp';
-import secondTestimonial from './image.webp';
-import thirdTestimonial from './third testimonial.webp';
 import usmanImage from './usmanImage.jpg';
 import usamaImage from './usamaImage.jpg';
 import shujatImage from './shujatImage.jpg';
@@ -57,9 +54,6 @@ export {
   express,
   aws,
   mui,
-  firstTestimonial,
-  secondTestimonial,
-  thirdTestimonial,
   gsap,
   framer,
   figma,
