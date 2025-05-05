@@ -13,6 +13,8 @@ import figma from "./tech/figma.png";
 import momo from './momo.png';
 import moamalat from './moamalat.png';
 import falaya from './falaya.png'
+import yalla from './yalla.PNG'
+import taleemabad from './taleemabad.PNG'
 import mysql from './tech/mysql.png';
 import express from './tech/express.png';
 import aws from './tech/aws.png';
@@ -49,6 +51,8 @@ export {
   momo,
   falaya,
   moamalat,
+    yalla,
+  taleemabad,
   mysql,
   express,
   aws,
